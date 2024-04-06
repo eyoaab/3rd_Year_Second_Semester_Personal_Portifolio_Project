@@ -124,7 +124,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap:6em;
+    gap:10em;
     padding-top: 3%;
     
   }
@@ -137,7 +137,6 @@ nav {
     border-radius: 40%;
   }
   .Biography table{
-    border: 3px solid #776e6e;
     border-radius: 1em;
     margin-left: -9em;
     font-size: larger;
@@ -145,8 +144,13 @@ nav {
   .Biography table td{
     padding: 0.5em;
   }
+  .Biography table tr td:nth-child(1) {
+    font-size: .85em;
+    margin-right: 10em;
+  }
  .bio_intro{
     margin-left: 2em;
+    margin-top: 7em;
  }
  #bio_intro_p{
     margin-left: 1em;
@@ -160,6 +164,38 @@ nav {
     width: 70vh;
     height: 50vh;
   }
+  /* the education part*/
+
+  .Education{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+    gap: 3em;
+    flex-flow: column;
+  }
+  .Education h2{
+    margin-left: 2em;
+  }
+  .Education .Cards img{
+    width: 1.5em;
+    height: 1.5em;
+    cursor: pointer;
+    margin-bottom: -.5em;
+    margin-right: .8em;
+    border-radius: 40%;
+  }
+  .Education .Cards{
+    border-radius: 1em;
+    padding: 1em 2em 3em 1em;
+    width: 40em;
+    display: flex;
+    align-items:center;
+    text-align: center;
+    flex-flow: column;
+    box-shadow:rgb(0, 13, 128) 0px 5px 15px;
+  }
+  /**/
 
 
 
