@@ -125,7 +125,7 @@ nav {
     justify-content: center;
     align-items: center;
     gap:10em;
-    padding-top: 3%;
+    padding-top: 1%;
     
   }
   .Biography table img{
@@ -189,7 +189,7 @@ nav {
   }
   .Education .Cards{
     break-inside: avoid-column;
-    border: #050b63 1px solid;
+    border: #9da0c5 1px solid;
     border-radius: 1em;
     padding: 1em 2em 2em 1em;
     width: 90%;
@@ -201,6 +201,7 @@ nav {
     height: auto;
     clear: both;
     margin-bottom: 1em;
+    background-color: #e6e6f7;
 
   }
   .Cards:hover{
@@ -218,7 +219,7 @@ nav {
   }
   .Skill .container {
     display: flex;
-    flex-wrap: wrap; /* Allow cards to wrap to the next row */
+    flex-wrap: wrap;
     border-top: 2px solid rgb(19, 1, 100);
     border-bottom: 2px solid rgb(19, 1, 100);
     padding: 3em;
@@ -244,6 +245,43 @@ nav {
     margin-bottom: -.9em;
   }
   /*Projects*/
+  .Projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Display in two columns */
+    gap:3em;  
+    overflow: hidden;
+    margin-right: 6em;
+    margin-left: 6em;
+    overflow: hidden;
+  }
+  
+  .Projects section img{
+    width: 100%;
+    height: 60vh;
+    cursor: pointer;
+    margin-right: .8em;
+  }
+  .Projects section{
+    break-inside: avoid-column;
+    border: #050b63 1px solid;
+    border-radius: 1em;
+    padding: 1em 2em 2em 1em;
+    width: 35vw;
+    display: flex;
+    align-items:center;
+    text-align: center;
+    flex-flow: column;
+    clear: both;
+    border: #033eb3 2px solid;
+    height: 70vh;
+  }
+  .Projects section:hover{
+  box-shadow:rgb(23, 0, 128) 0px 5px 15px;
+  }
+
+  
+ 
+  
 
 
 
