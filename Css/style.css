@@ -211,30 +211,31 @@ nav {
   } 
   /*Skills*/
   .Skill {
-    column-count: 2;
-    border:rgb(23, 0, 128) 1px solid;
-    border-radius: 1em;
-    padding: 3em 3em 3em 10em;
-    margin-bottom: 20px;
-    justify-self: center;
-    width: 40%;
-    margin-left: 10em;
-    margin-top: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
   }
-  
+  .Skill .container {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap to the next row */
+    border-top: 2px solid rgb(19, 1, 100);
+    border-bottom: 2px solid rgb(19, 1, 100);
+    padding: 3em;
+    margin-bottom: 20px;
+    width: 100%;
+  }  
   .languadges {
     break-inside: avoid-column; 
-    margin-bottom: 20px; 
+    margin:1em; 
     border-bottom: #0056b3 1px solid;
-    width: 40%;
-  }
-  
+    width: 20%;
+  } 
   .languadges p {
     display: inline;
     color:#0f141e;
     font-size: 1em;
   }
-
   .languadges img {
     width: 30px; 
     height: auto; 
@@ -242,6 +243,7 @@ nav {
     display: inline;
     margin-bottom: -.9em;
   }
+  /*Projects*/
 
 
 
