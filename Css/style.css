@@ -165,14 +165,16 @@ nav {
     height: 50vh;
   }
   /* the education part*/
-
-  .Education{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 5%;
-    gap: 3em;
-    flex-flow: column;
+  .Education {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
+    padding-top: 5%; 
+    margin-left: 2em; 
+    margin-top: 3em; 
+    overflow: hidden; 
+    height: auto; 
+    padding-left:2em;
   }
   .Education h2{
     margin-left: 2em;
@@ -186,16 +188,60 @@ nav {
     border-radius: 40%;
   }
   .Education .Cards{
+    break-inside: avoid-column;
+    border: #050b63 1px solid;
     border-radius: 1em;
-    padding: 1em 2em 3em 1em;
-    width: 40em;
+    padding: 1em 2em 2em 1em;
+    width: 90%;
     display: flex;
     align-items:center;
     text-align: center;
     flex-flow: column;
-    box-shadow:rgb(0, 13, 128) 0px 5px 15px;
+    margin-top: 2em;
+    height: auto;
+    clear: both;
+    margin-bottom: 1em;
+
   }
-  /**/
+  .Cards:hover{
+  box-shadow:rgb(23, 0, 128) 0px 5px 15px;
+  }
+  .Education section:nth-child(5){
+    margin-left: 20em;
+  } 
+  /*Skills*/
+  .Skill {
+    column-count: 2;
+    border:rgb(23, 0, 128) 1px solid;
+    border-radius: 1em;
+    padding: 3em 3em 3em 10em;
+    margin-bottom: 20px;
+    justify-self: center;
+    width: 40%;
+    margin-left: 10em;
+    margin-top: 5em;
+  }
+  
+  .languadges {
+    break-inside: avoid-column; 
+    margin-bottom: 20px; 
+    border-bottom: #0056b3 1px solid;
+    width: 40%;
+  }
+  
+  .languadges p {
+    display: inline;
+    color:#0f141e;
+    font-size: 1em;
+  }
+
+  .languadges img {
+    width: 30px; 
+    height: auto; 
+    margin-right: 5px; 
+    display: inline;
+    margin-bottom: -.9em;
+  }
 
 
 
