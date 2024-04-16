@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../Css/style.css">  
-     
+
     <title>Personal Portifolio</title>
 </head>
 <body>
@@ -167,18 +167,19 @@
    <div class="Projects">
     <section class="project">
         <div class="image-container">
-          <button class="prev-button">&#10094;</button>
-          <img src="../Images/online_shoping.png" alt="">
-          <button class="next-button">&#10095;</button>
+            <button class="prev-button" id = 'prevButtonId' onclick="changeImage(Images, 'Advanced')"> &#10094;</button>
+            <img src="../Images/Advanced/Screenshot(66).png" alt="" id="Advanced">
+            <button class="next-button" id ='nextButtonId' onclick="changeImage(Images, 'Advanced')">&#10095;</button>
         </div>
+        
         <p>An online shopping website using HTML, CSS, JavaScript, Java (Servlet), and MySQL.</p>
     </section>
 
         <section class="project">
             <div class="image-container">
-                <button class="prev-button">&#10094;</button>
-                <img src="../Images/leetcode_profile.png" alt="">
-                <button class="next-button">&#10095;</button>
+                <button class="prev-button" onclick="changeImage(Leetcode, 'Leetcode')">&#10094;</button>
+                <img src="../Images/Leetcode/leetcode_profile.png" alt="" id ="Leetcode">
+                <button class="next-button" onclick="changeImage(Leetcode, 'Leetcode')">&#10095;</button>
             </div>
             <p>I have solved more than 600 problems on leetcode</p>
         </section> 
@@ -204,6 +205,9 @@
 
 
 
+   <script src="../JavaScript/script.js" type="text/javascript" lang="javascript">
+    
+   </script> 
     
 </body>
 </html>
