@@ -185,6 +185,7 @@ nav {
     align-items: center;
     padding-top: 3%;
     gap:2.5em;
+    padding-bottom: 0em;
     
   }
   .contact_me img{
@@ -204,7 +205,7 @@ nav {
   margin-left: -35em;
   text-shadow:#333 0px 2px 2px;
   margin-left: 2em;
-  margin-top: 1.5em;
+  margin-top: 1em;
   font-family:myFont;
 }
   .Biography{
@@ -285,18 +286,29 @@ nav {
     height: auto;
     clear: both;
     margin-bottom: 1em;
-    background-color: white; /* Dark grey */
+    background-color: rgb(224, 220, 220); 
     box-shadow:rgb(0, 13, 128) 0px 5px 15px;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  .Education .Cards p{
+    padding-left: 1em;
+    padding-right: 1em;
+    font-family: Arial, sans-serif; 
+    font-size: 16px;
+    line-height: 1.1; 
+    color: #333;
+    margin-bottom: 20px; 
+    font-size: 1.1em;
   }
  
   #Education{
     text-align: center;
-    font-size: 3em;
     color: #0f141e;
-    margin-left: -22em;
+    margin-left: -14em;
     text-shadow:#333 0px 2px 2px; 
     font-family: myFont; 
+    font-size: 80px;
+    margin-bottom: .5em;
   } 
  
   .Education section:nth-child(5){
@@ -313,7 +325,7 @@ nav {
     justify-content: center;
     align-items: center;
     padding: 2em;
-    padding-top: 0em;
+    padding-top:0em;
   }
   .Skill .container {
     display: flex;
@@ -321,25 +333,31 @@ nav {
     padding: 3em;
     margin-bottom: 20px;
     width: 150%;
-    background-color: #afadad; /* Dark grey */
+    background-color: rgb(224, 220, 220); 
     box-shadow:rgb(0, 13, 128) 0px 5px 15px;
     border-radius: 1em;
+    padding-top: 0em;;
     
   }  
 #skill{
     text-align: center;
-    font-size: 3em;
     color: #0f141e;
-    margin-left: -25em;
-    text-shadow:#333 0px 2px 2px;  
+    margin-left: -15em;
+    text-shadow:#333 0px 2px 2px; 
+    font-family: myFont; 
+    font-size: 80px;
+    margin-bottom: .5em;
+
     
   }
   #Projects_intro{
     text-align: center;
     font-size: 3em;
     color: #0f141e;
-    margin-left: -14em;
+    margin-left: -13em;
     text-shadow:#333 0px 2px 2px;
+    font-family: myFont;
+    font-size: 4em;
   }
   .languadges {
     align-items: center;
@@ -379,21 +397,61 @@ nav {
     margin-right: .8em;
     border-radius: 3%;
   }
-  .Projects section{
+  /* templet*/
+  .project {
     break-inside: avoid-column;
     border: #636468 1px dotted;
     border-radius: 1em;
-    padding: 1em 1em 1em 1em;
+    padding: 1em;
     width: 80%;
     display: flex;
-    align-items:center;
+    align-items: center;
     text-align: center;
     flex-flow: column;
-    height: 70vh;
-    background-color: #afadad; /* Dark grey */
-    box-shadow:rgb(0, 13, 128) 0px 5px 15px;
+    background-color: rgb(224, 220, 220); 
+    box-shadow: rgb(0, 13, 128) 0px 5px 15px;
     margin-left: 2em;
-  }
+}
+
+.project-info {
+    height: 60px; 
+    overflow: hidden;
+}
+.project-info p{
+  padding-left: 5em;
+  padding-right: 5em;
+  font-family: Arial, sans-serif; 
+  font-size: 16px;
+  line-height: 1.5; 
+  color: #333;
+  margin-bottom: 20px; 
+  font-size: 1.1em;
+
+}
+.expanded {
+    height: auto; 
+}
+.show_more_button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+/* Hover effect */
+.show_more_button:hover {
+  background-color: #45a049; /
+}
+  /* templet*/
+
   .image-container {
     position: relative;
   }
@@ -418,19 +476,26 @@ nav {
 
 /* the observer part*/
 .A {
-  transform: translateX(-36vw); 
+  transform: translateX(-20vw); 
   transition: transform 1s; 
 }
 .B {
-  transform: translateX(7vw); 
+  transform: translateX(24vw); 
+  transition: transform 1s; 
+}
+.C{
+  transform: translateY(17vh); 
   transition: transform 1s; 
 }
 .visible {
-  transform: translateX(0vw); 
+  transform: translateX(4vw); 
 }
 
 .visible1 {
   transform: translateX(0vw);
+}
+.visible2 {
+  transform: translateY(0vh);
 }
 
 /**display*/

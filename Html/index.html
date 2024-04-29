@@ -128,7 +128,7 @@
                 The club provides valuable opportunities for personal and professional growth,
                  equipping members with the tools and strategies necessary to tackle complex problems with confidence.</p>
         </section> 
-        <section class="Cards">
+        <section class="Cards C" >
             <div class="Date"><img src="../Images/calendarr.png" alt="">2015-..</div><br>
             <h2>Africa To Silcon Valley</h2>
             <div class="Date"><img src="../Images/locationn.png" alt="">At Adama,Ethiopia</div>
@@ -178,21 +178,37 @@
    <div class="Projects">
     <section class="project">
         <div class="image-container">
-            <button class="prev-button" id = 'prevButtonId' onclick="changeImage(Images, 'Advanced')"> &#10094;</button>
+            <button class="prev-button" id="prevButtonId" onclick="changeImage(Images, 'Advanced')"> &#10094;</button>
             <img src="../Images/Advanced/Screenshot(66).png" alt="" id="Advanced">
-            <button class="next-button" id ='nextButtonId' onclick="changeImage(Images, 'Advanced')">&#10095;</button>
+            <button class="next-button" id="nextButtonId" onclick="changeImage(Images, 'Advanced')">&#10095;</button>
         </div>
         
-        <p>An online shopping website using HTML, CSS, JavaScript, Java (Servlet), and MySQL.</p>
-    </section>
+        <div class="project-info" id ='online_shoping'>
+            <p>I have developed an intuitive online shopping website utilizing a comprehensive tech stack, including HTML, CSS, JavaScript,
+                Java Servlets, MySQL, and Bootstrap. This platform empowers users to seamlessly browse, purchase, and manage products, 
+                while administrators have the capability to effortlessly add new items to the inventory. Through meticulous design
+                and robust functionality, 
+                the website delivers an immersive shopping experience tailored to meet the needs of both customers and administrators alike.</p>
+        </div>
+        <button class="show_more_button" onclick="toggleProjectInfo('online_shoping','online_shop')" id="online_shop">Show More</button>
 
+    </section>
+  
         <section class="project">
             <div class="image-container">
                 <button class="prev-button" onclick="changeImage(Leetcode, 'Leetcode')">&#10094;</button>
                 <img src="../Images/Leetcode/leetcode_profile.png" alt="" id ="Leetcode">
                 <button class="next-button" onclick="changeImage(Leetcode, 'Leetcode')">&#10095;</button>
             </div>
-            <p>I have solved more than 600 problems on leetcode</p>
+            <div class="project-info" id = 'leetcode_par'>
+             <p>I've achieved significant milestones on LeetCode, successfully solving over 600 problems while maintaining an unbroken streak of over 4 months.
+                 Throughout this journey, I've delved deep into the intricacies of various data structures, progressing from fundamental arrays to complex structures
+                  like graphs, trees, and dynamic programming. This experience has not only fortified my problem-solving skills but also broadened my understanding of algorithmic
+                   concepts, equipping me with a robust foundation for tackling diverse challenges in the realm of Software development</p>
+            </div>
+        <button class="show_more_button" onclick="toggleProjectInfo('leetcode_par','leetcode_button')" id="leetcode_button">Show More</button>
+
+
         </section> 
 
         <section class="project"> 
@@ -200,8 +216,16 @@
                 <button class="prev-button">&#10094;</button>
                 <img src="../Images/kattice_profile.png" alt="">
                 <button class="next-button">&#10095;</button>
+            </div> 
+            <div class="project-info" id = 'kattice_para'>
+                <p>In addition to my active participation on the Open Kattis platform, where I've successfully solved over 300 challenges,
+                     I've also achieved notable rankings. I secured the 21st position among my peers at Adama Science and Technology University 
+                     and the 23rd position nationwide in Ethiopia. These accomplishments not only attest to my dedication and proficiency in competitive 
+                     programming but also highlight my ability to excel in challenging environments</p>
             </div>
-            <p>I have solved more than 300 problems on open kattis</p>
+        <button class="show_more_button" onclick="toggleProjectInfo('kattice_para','kattice_button')" id="kattice_button">Show More</button>
+
+
         </section>
 
         <section class="project">
@@ -210,7 +234,15 @@
                 <img src="../Images/Car shoping project/Screenshot (106).png" alt="" id = 'Car_shoping'>
                 <button class="next-button"onclick="changeImage(Car_shiping, 'Car_shoping')" >&#10095;</button>
             </div>
-            <p>A website which used to sell cars</p>
+            <div class="project-info" id = 'car_para'>
+            <p>I have meticulously crafted a responsive static website showcasing a diverse range of product cars,
+                each with its unique array of customizable options. Through thoughtful design and implementation, 
+                this website provides users with an immersive browsing experience, allowing them to explore various features and specifications of 
+                the showcased cars with ease</p>
+            </div>
+            <button class="show_more_button" onclick="toggleProjectInfo('car_para','car_button')" id="car_button">Show More</button>
+
+
         </section>
    </div>
 </body>

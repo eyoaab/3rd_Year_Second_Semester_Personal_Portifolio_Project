@@ -83,7 +83,40 @@ document.addEventListener("DOMContentLoaded", function() {
       observer.observe(section);
   });
 });
-/**to the */
+document.addEventListener("DOMContentLoaded", function() {
+  const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.5
+  };
+  const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              entry.target.classList.add('visible2');
+          } else {
+              entry.target.classList.remove('visible2');
+          }
+      });
+  }, observerOptions);
+
+  document.querySelectorAll('.C').forEach(section => {
+      observer.observe(section);
+  });
+});
+/**to the see more option */
+function toggleProjectInfo(para,button) {
+  const projectInfo = document.getElementById(para);
+  const showMoreButton = document.getElementById(button);
+
+  if (projectInfo.classList.contains('expanded')) {
+      projectInfo.classList.remove('expanded');
+      showMoreButton.textContent = 'Show More';
+  } else {
+      projectInfo.classList.add('expanded');
+      showMoreButton.textContent = 'Show Less';
+  }
+}
+
 
 
 
