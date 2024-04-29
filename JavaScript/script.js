@@ -8,6 +8,7 @@ var Images = [
   "Images/Advanced/Screenshot(68).png",
   "Images/Advanced/Screenshot(69).png",
   "Images/Advanced/Screenshot(70).png",
+  '../Images/Advanced/Screenshot(66).png'
 ];
 var Leetcode = [
   'Images/Leetcode/leetcode_profile.png',
@@ -15,11 +16,25 @@ var Leetcode = [
   'Images/Leetcode/Screenshot (97).png',
   'Images/Leetcode/Screenshot (103).png',
   'Images/Leetcode/Screenshot (104).png'
-
- 
-  
+]
+var Leetcode = [
+  'Images/Leetcode/leetcode_profile.png',
+  'Images/Leetcode/Screenshot (95).png',
+  'Images/Leetcode/Screenshot (97).png',
+  'Images/Leetcode/Screenshot (103).png',
+  'Images/Leetcode/Screenshot (104).png'
+]
+var Car_shiping = [
+  'Images/Car shoping project/Screenshot (107).png',
+  'Images/Car shoping project/Screenshot (108).png',
+  'Images/Car shoping project/Screenshot (109).png',
+  'Images/Car shoping project/Screenshot (109).png',
+  'Images/Car shoping project/Screenshot (110).png',
+  'Images/Car shoping project/Screenshot (111).png',
+  'Images/Car shoping project/Screenshot (106).png',
 
 ]
+
 function getRandomInt(n) {
   return Math.floor(Math.random() * n);
 }
