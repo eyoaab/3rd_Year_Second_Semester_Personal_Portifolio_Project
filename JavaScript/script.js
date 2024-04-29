@@ -17,13 +17,6 @@ var Leetcode = [
   'Images/Leetcode/Screenshot (103).png',
   'Images/Leetcode/Screenshot (104).png'
 ]
-var Leetcode = [
-  'Images/Leetcode/leetcode_profile.png',
-  'Images/Leetcode/Screenshot (95).png',
-  'Images/Leetcode/Screenshot (97).png',
-  'Images/Leetcode/Screenshot (103).png',
-  'Images/Leetcode/Screenshot (104).png'
-]
 var Car_shiping = [
   'Images/Car shoping project/Screenshot (107).png',
   'Images/Car shoping project/Screenshot (108).png',
@@ -47,6 +40,54 @@ function changeImage(Images, photoId) {
   console.log('length',Images.length)
   imageElement.src ='../' + Images[currentIndex];
 }
+// spiner
+document.addEventListener("DOMContentLoaded", function() {
+  const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.5
+  };
+
+  const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+          } else {
+              entry.target.classList.remove('visible'); 
+          }
+      });
+  }, observerOptions);
+
+  document.querySelectorAll('.A').forEach(section => {
+      observer.observe(section);
+  });
+});
+/*to the second */
+document.addEventListener("DOMContentLoaded", function() {
+  const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.5
+  };
+  const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              entry.target.classList.add('visible1');
+          } else {
+              entry.target.classList.remove('visible1');
+          }
+      });
+  }, observerOptions);
+
+  document.querySelectorAll('.B').forEach(section => {
+      observer.observe(section);
+  });
+});
+/**to the */
+
+
+
+
 
 
   

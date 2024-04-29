@@ -1,4 +1,8 @@
 
+@font-face{
+  font-family: myFont;
+  src: url('../Fonts/Nocturnal\ Free.ttf');
+}
 *{
   box-sizing: border-box;
   scroll-behavior:smooth;
@@ -23,7 +27,7 @@
 /*to shine a tsxt*/
 .shine {
   text-align: center;
-  font-size: 2em;
+  font-size: 3em;
   color: #e2ebeb;
   text-shadow:#132170 0px 2px 2px; 
   margin-top: 0em;
@@ -31,6 +35,8 @@
   margin-top: .3em;
   position: relative;
   display: inline-block;
+  font-family:myFont;
+
 }
 
 .shine::before {
@@ -75,23 +81,33 @@ header{
 }
 nav {
     background-color:rgb(52, 67, 107); 
+
   }
   nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+
   }
   nav ul li {
     display: inline;
+    font-family:myFont;
+    font-size: 2em;
+    font-style: normal;
   }
   nav ul li a {
     display: inline-block;
     color: white;
     padding: 20px;
     text-decoration: none;
+    text-shadow: #121db4 1px;
   }
   nav ul li a:hover {
-    background-color: #140f0f; 
+    /* background-color: #614d4d;  */
+    border-radius: 10%;
+    color: black;
+    
+    
   }
   /*styling home part*/
 .Home {
@@ -109,7 +125,7 @@ nav {
     transition: 0.3s;
     margin: 0 2em 0 2em;
     padding: 1em;
-
+    font-family:myFont;
   }
 
   .Image img{
@@ -119,12 +135,10 @@ nav {
     box-shadow:rgb(0, 13, 128) 0px 5px 15px;
   }
   .description{/*styling the description part*/
-    text-align: center;
-    padding-left: 2em;
-    padding-right: 2em;
-    font-family: 'Roboto', sans-serif;
-    color:#333;
-    font-size: larger;
+    text-align: center;    
+    font-family:myFont;
+    color:rgb(105,98,98);
+    font-size: 2em;
   }
    /* styling the download cv button */
   .btn {
@@ -132,12 +146,12 @@ nav {
     padding: 10px 20px;
     transition: background-color 0.3s ease;
     background-color:white;
-    color: rgb(29, 27, 27);
+    color:rgb(39, 39, 39);
     text-decoration: none;
     border-radius: 5px;
-    border: 3px solid #776e6e;
+    border: 3px solid #16175e;
     border-radius: 1em;
-
+    font-size: 2em;
   }
   .buttons{
     display:flex;
@@ -151,16 +165,17 @@ nav {
     color:white;
   }
   .contact-btn{
-    background-color: #ffffff;
-    color: black;
-    border-radius: 5px;
-    transition: 0.3s;
-    border: none;
+    display: inline-block;
     padding: 10px 20px;
-    cursor: pointer;
-    border: 3px solid #776e6e;
-    height: 3em;
+    transition: background-color 0.3s ease;
+    background-color:white;
+    color:rgb(39, 39, 39);
+    text-decoration: none;
+    border-radius: 4px;
+    border: 3px solid #16175e;
     border-radius: 1em;
+    font-size: 2em;
+    font-family: myFont;
 
   }
   /* styling the contact me part*/
@@ -184,12 +199,13 @@ nav {
   }
   /* styling the biography part*/
 .bio_intro{
-  font-size: 3em;
+  font-size: 4em;
   color: #0f141e;
   margin-left: -35em;
   text-shadow:#333 0px 2px 2px;
   margin-left: 2em;
   margin-top: 1.5em;
+  font-family:myFont;
 }
   .Biography{
     display: flex;
@@ -218,6 +234,8 @@ nav {
   .Biography table tr td:nth-child(1) {
     font-size: .85em;
     margin-right: 10em;
+    font-family: myFont;
+    font-size: 1.7em;
   }
 
  #bio_intro_p{
@@ -264,23 +282,31 @@ nav {
     text-align: center;
     flex-flow: column;
     margin-top: 2em;
-    height: 15em;
+    height: auto;
     clear: both;
     margin-bottom: 1em;
     background-color: white; /* Dark grey */
     box-shadow:rgb(0, 13, 128) 0px 5px 15px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
+ 
   #Education{
     text-align: center;
     font-size: 3em;
     color: #0f141e;
     margin-left: -22em;
-    text-shadow:#333 0px 2px 2px;  
+    text-shadow:#333 0px 2px 2px; 
+    font-family: myFont; 
   } 
  
   .Education section:nth-child(5){
     margin-left: 20em;
   } 
+  .Education .Cards h2{
+    font-family: myFont; 
+    font-size: 2em;
+
+  }
   /*Skills*/
   .Skill {
     display: flex;
@@ -390,4 +416,21 @@ nav {
   font-size: 2.4em; 
 }
 
+/* the observer part*/
+.A {
+  transform: translateX(-36vw); 
+  transition: transform 1s; 
+}
+.B {
+  transform: translateX(7vw); 
+  transition: transform 1s; 
+}
+.visible {
+  transform: translateX(0vw); 
+}
 
+.visible1 {
+  transform: translateX(0vw);
+}
+
+/**display*/
