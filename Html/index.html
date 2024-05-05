@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../Css/style.css">  
     <link rel="preconnect" href="https://fonts.googleapis.com">
-
     <title>Personal Portifolio</title>
+
 </head>
 <body id = 'body'>
 
@@ -21,7 +21,7 @@
     </div>
         <nav>
             <ul>
-              <li><a href="#"  id="home">Home</a></li>
+              <li><a id="home">Home</a></li>
               <li><a href="#bio_intro">About</a></li>
               <li><a href="#Education">Education</a></li>
               <li><a href="#Projects_intro">Project</a></li>
@@ -33,6 +33,8 @@
     <div class="themes">
         <section id="white" ></section>
         <section id="black"></section>
+        <section id="gray"></section>
+
 
     </div>
 
@@ -56,9 +58,9 @@
     </div>
     <div class="contact_me">
         <i><img src="../Images/G-mail.webp" alt="email"></i>
+        <a href="https://t.me/eyoaab/"><i><img src="../Images/telegram1.webp" alt="whatsapp" id="telegram"></i></a>
         <i><img src="../Images/github.webp" alt="phone"></i>
-        <i><img src="../Images/telegram1.webp" alt="whatsapp" id="telegram"></i>
-        <i><img src="../Images/linkidin.webp" alt="instagram"></i>
+        <a href="https://www.linkedin.com/in/eyob-tariku16/"><i><img src="../Images/linkidin.webp" alt="instagram"></i></a>
     </div>
     <!-- About Part-->
     <div>
@@ -99,7 +101,7 @@
             </table>
         </div>
         <div>
-            <img src="../Images/eyob.png" alt="second image" id="second_imagr">
+            <img src="../Images/p3.jpg" alt="second image" id="second_imagr">
         </div>
 
 
@@ -186,7 +188,7 @@
     <section class="project">
         <div class="image-container">
             <button class="prev-button" id="prevButtonId" onclick="changeImage(Images, 'Advanced')"> &#10094;</button>
-            <img src="../Images/Advanced/Screenshot(66).png" alt="" id="Advanced">
+            <img src="../Images/Advanced/image5.png" alt="" id="Advanced">
             <button class="next-button" id="nextButtonId" onclick="changeImage(Images, 'Advanced')">&#10095;</button>
         </div>
         
@@ -220,9 +222,9 @@
 
         <section class="project"> 
             <div class="image-container">    
-                <button class="prev-button">&#10094;</button>
-                <img src="../Images/kattice_profile.png" alt="">
-                <button class="next-button">&#10095;</button>
+                <button class="prev-button" onclick="changeImage(kattice, 'kattice')" >&#10094;</button>
+                <img src="../Images/kattice/kattice_profile.png" alt="" id="kattice">
+                <button class="next-button" onclick="changeImage(kattice, 'kattice')" >&#10095;</button>
             </div> 
             <div class="project-info" id = 'kattice_para'>
                 <p>In addition to my active participation on the Open Kattis platform, where I've successfully solved over 300 challenges,
@@ -238,7 +240,7 @@
         <section class="project">
             <div class="image-container">
                 <button class="prev-button" onclick="changeImage(Car_shiping, 'Car_shoping')">&#10094;</button>
-                <img src="../Images/Car shoping project/Screenshot (106).png" alt="" id = 'Car_shoping'>
+                <img src="../Images/Car shoping project/image1.png" alt="" id = 'Car_shoping'>
                 <button class="next-button"onclick="changeImage(Car_shiping, 'Car_shoping')" >&#10095;</button>
             </div>
             <div class="project-info" id = 'car_para'>
@@ -252,5 +254,9 @@
 
         </section>
    </div>
+   <footer>
+    <hr>
+    <p>&copy; Designed and Developed By <span id="eyob">Eyob Tariku</span></p>
+   </footer>
 </body>
 </html>

@@ -1,14 +1,21 @@
 console.log("Hello World!");
 var Images = [
-  "Images/Advanced/Screenshot(63).png",
-  "Images/Advanced/Screenshot(64).png",
-  "Images/Advanced/Screenshot(65).png",
-  "Images/Advanced/Screenshot(66).png",
-  "Images/Advanced/Screenshot(67).png",
-  "Images/Advanced/Screenshot(68).png",
-  "Images/Advanced/Screenshot(69).png",
-  "Images/Advanced/Screenshot(70).png",
-  '../Images/Advanced/Screenshot(66).png'
+  "Images/Advanced/image1.png",
+  "Images/Advanced/image2.png",
+  "Images/Advanced/image3.png",
+  "Images/Advanced/image4.png",
+  "Images/Advanced/image5.png",
+  "Images/Advanced/image6.png",
+  "Images/Advanced/image7.png",
+  "Images/Advanced/image8.png",
+  "Images/Advanced/image9.png",
+  "Images/Advanced/image10.png",
+  "Images/Advanced/image11.png",
+  "Images/Advanced/image12.png",
+  "Images/Advanced/image13.png"
+
+
+
 ];
 var Leetcode = [
   'Images/Leetcode/leetcode_profile.png',
@@ -18,15 +25,18 @@ var Leetcode = [
   'Images/Leetcode/Screenshot (104).png'
 ]
 var Car_shiping = [
-  'Images/Car shoping project/Screenshot (107).png',
-  'Images/Car shoping project/Screenshot (108).png',
-  'Images/Car shoping project/Screenshot (109).png',
-  'Images/Car shoping project/Screenshot (109).png',
-  'Images/Car shoping project/Screenshot (110).png',
-  'Images/Car shoping project/Screenshot (111).png',
-  'Images/Car shoping project/Screenshot (106).png',
-
+  'Images/Car shoping project/image1.png',
+  'Images/Car shoping project/image2.png',
+  'Images/Car shoping project/image3.png',
+  'Images/Car shoping project/image4.png',
+  'Images/Car shoping project/image5.png',
+  'Images/Car shoping project/image6.png'
 ]
+var kattice = [
+    'Images/kattice/kattice_profile.png',
+    'Images/kattice/image2.png',
+    'Images/kattice/image1.png'
+  ]
 
 function getRandomInt(n) {
   return Math.floor(Math.random() * n);
@@ -124,25 +134,35 @@ function changeToWhite() {
     texts.forEach(function(text) {
         text.style.color = 'black';
     });
-    body.style.backgroundColor = 'white';
+    body.style.backgroundColor = ' #f5f5f5';
 }
 
 function changeToBlack() {
     let body = document.body;
     let texts = document.querySelectorAll(".texts");
     let black_btn = document.getElementById("black");
-    black_btn.style.boxShadow = "white 0px 5px 15px";
+    black_btn.style.boxShadow = "white 3px 5px 15px";
     texts.forEach(function(text) {
         text.style.color = 'white';
     });
     body.style.backgroundColor = 'black';
 }
-
+function changeToGray() {
+    let body = document.body;
+    let texts = document.querySelectorAll(".texts");
+    texts.forEach(function(text) {
+        text.style.color = 'white';
+    });
+    body.style.backgroundColor = 'gray';
+}
 document.getElementById("white").onclick = function() {
     changeToWhite()
 };
 document.getElementById("black").onclick = function() {
     changeToBlack()
+};
+document.getElementById("gray").onclick = function() {
+    changeToGray()
 };
 
 

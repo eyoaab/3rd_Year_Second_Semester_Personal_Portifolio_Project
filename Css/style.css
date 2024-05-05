@@ -84,16 +84,17 @@ header{
   display: flex;
   flex-flow: row;
   gap: 1em;
-  background-color:rgb(52, 67, 107);
+  background-color: #333; 
+
   width: 100%;
   justify-content: space-between;
   padding-left: 2em;
   padding-right: 3em;
   align-items: center;
+  border-radius: 0 0 1.5em 1.5em;
 }
 nav {
-    background-color:rgb(52, 67, 107); 
-
+  background-color: #333; 
   }
   nav ul {
     list-style-type: none;
@@ -104,7 +105,7 @@ nav {
   nav ul li {
     display: inline;
     font-family:myFont;
-    font-size: 2em;
+    font-size: 2.5em;
     font-style: normal;
   }
   nav ul li a {
@@ -115,9 +116,8 @@ nav {
     text-shadow: #121db4 1px;
   }
   nav ul li a:hover {
-    /* background-color: #614d4d;  */
     border-radius: 10%;
-    color: black;
+    color: #12b4b4 ;
     
     
   }
@@ -260,8 +260,9 @@ nav {
  }
   /*editing the second image*/
   #second_imagr{
-    width: 70vh;
-    height: 50vh;
+    width: 60vh;
+    height: 70vh;
+    border-radius: 1em;
   }
   /* the education part*/
   .Education {
@@ -396,10 +397,9 @@ nav {
     display: flex;
     flex-wrap: wrap;
     gap:3em;  
-    overflow: hidden;
     margin-right: 6em;
     margin-left: 6em;
-    overflow: hidden;
+    overflow: visible;
   }
   
   .Projects section img{
@@ -530,7 +530,7 @@ nav {
 
 }
 .themes #white{
-  height: 50%;
+  height: 55%;
   width: 50%;
   border-radius: 50%;
   background-color: white;
@@ -539,12 +539,57 @@ nav {
 
 } 
 .themes #black{
-  height: 50%;
+  height: 55%;
   width: 50%;
   border-radius: 50%;
   background-color:black;
-  box-shadow:rgb(0, 0, 0) 0px 5px 15px;
+  box-shadow:rgb(8, 8, 8) 0px 5px 15px;
   cursor: pointer;
 
 
-} 
+}
+.themes #gray{
+  height: 55%;
+  width: 50%;
+  border-radius: 50%;
+  background-color:rgb(158, 158, 158);
+  box-shadow:rgb(0, 0, 0) 0px 5px 15px;
+  cursor: pointer;
+}  
+
+/*to animate the arrrow*/
+@keyframes toWiggle_the_arrow{
+  0%{
+      transform: scale(.90);
+  }
+  50%{
+      transform: scale(1);
+  }
+  100%{
+      transform: scale(.90);
+  }
+}
+#up_arrow{
+  animation-name: toWiggle_the_arrow;
+  animation-duration: 2s; 
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+
+}
+/* to edit the footer part*/
+footer{
+  background-color: #333; 
+  color: #fff; 
+  padding: 10px;
+  text-align: center;
+  margin-top: 3em;
+}
+footer p{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.1em;
+}
+footer #eyob{
+  color:#45a049;
+  font-size: 2em;
+  font-family: myFont;
+}
