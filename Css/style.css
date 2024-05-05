@@ -498,4 +498,15 @@ nav {
   transform: translateY(0vh);
 }
 
-/**display*/
+/**up arrow*/
+#up_arrow{
+  position:fixed;
+  float: right;
+  width: 3.5em;
+  height: 3.5em;
+  z-index: 1;
+  margin-left: 94vw;
+  border-radius: 3em;
+  box-shadow:rgb(0, 13, 128) 0px 5px 15px;
+  margin-top: 70vh;
+}
