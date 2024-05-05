@@ -117,6 +117,33 @@ function toggleProjectInfo(para,button) {
   }
 }
 
+/*to change the themes from black to white */
+function changeToWhite() {
+    let body = document.body;
+    let texts = document.querySelectorAll(".texts");
+    texts.forEach(function(text) {
+        text.style.color = 'black';
+    });
+    body.style.backgroundColor = 'white';
+}
+
+function changeToBlack() {
+    let body = document.body;
+    let texts = document.querySelectorAll(".texts");
+    let black_btn = document.getElementById("black");
+    black_btn.style.boxShadow = "white 0px 5px 15px";
+    texts.forEach(function(text) {
+        text.style.color = 'white';
+    });
+    body.style.backgroundColor = 'black';
+}
+
+document.getElementById("white").onclick = function() {
+    changeToWhite()
+};
+document.getElementById("black").onclick = function() {
+    changeToBlack()
+};
 
 
 

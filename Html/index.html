@@ -8,7 +8,7 @@
 
     <title>Personal Portifolio</title>
 </head>
-<body>
+<body id = 'body'>
 
    <script src="../JavaScript/script.js" type="text/javascript" lang="javascript" defer></script> 
 
@@ -30,6 +30,11 @@
           </nav>
     </header>
    <a href="#home"><img src="../Images/up-arrow.jpg" alt="" id="up_arrow"></a>
+    <div class="themes">
+        <section id="white" ></section>
+        <section id="black"></section>
+
+    </div>
 
     <div class = "Home">
         <div class = "Image"> 
@@ -57,8 +62,8 @@
     </div>
     <!-- About Part-->
     <div>
-        <h2 class ="bio_intro">About Me</h2>
-        <p id ="bio_intro_p">I love working on Algorithms, Backend Applications, and Compitiktive Programming. 
+        <h2 class ="bio_intro texts" >About Me</h2>
+        <p id ="bio_intro_p" class="texts">I love working on Algorithms, Backend Applications, and Compitiktive Programming. 
             I also read on my free time.</p>
     </div>
     <!-- Biography PArt-->
@@ -66,28 +71,28 @@
         <div>
             <table class="hidden">
                     <tr>
-                        <td><img src="../Images/mike.png" alt="">Name:</td>
-                        <td>Eyob Tariku</td>    
+                        <td class="texts"><img src="../Images/mike.png" alt=""  class="texts">Name:</td>
+                        <td class="texts">Eyob Tariku</td>    
                     </tr> 
                     <tr>
-                        <td><img src="../Images/G-mail.webp" alt="">Email:</td>
-                        <td>Eyobtariku48@gmail.com</td>
+                        <td class="texts"><img src="../Images/G-mail.webp" alt=""  class="texts">Email:</td>
+                        <td class="texts">Eyobtariku48@gmail.com</td>
                     </tr>
                     <tr>
-                        <td><img src="../Images/ethiopia.gif" alt="">Country:</td>
-                    <td>Ethiopia</td>
+                        <td class="texts"><img src="../Images/ethiopia.gif" alt="" >Country:</td>
+                    <td class="texts">Ethiopia</td>
                     </tr>
                     <tr>
-                        <td><img src="../Images/city_right.png" alt="">City:</td>
-                        <td>Adama Ethiopia</td> 
+                        <td class="texts"><img src="../Images/city_right.png" alt="" >City:</td>
+                        <td class="texts">Adama Ethiopia</td> 
                     </tr>
                     <tr>
-                        <td><img src="../Images/age.png" alt="">Age:</td>
-                        <td id="age">21</td>
+                        <td class="texts"><img src="../Images/age.png" alt="" >Age:</td>
+                        <td id="age" class="texts">21</td>
                     </tr>
                     <tr>
-                        <td><img src="../Images/religion.png" alt="">Relegion:</td>
-                        <td>Orthodox</td>
+                        <td class="texts"><img src="../Images/religion.png" alt="" >Relegion:</td>
+                        <td class="texts">Orthodox</td>
                     </tr>
     
                 
@@ -100,7 +105,7 @@
 
     </div>
     <!-- Education Part-->
-    <h3 id="Education"> Education</h3>
+    <h3 id="Education" class="texts"> Education</h3>
    <div class="Education">
         <section class="Cards B">
             <div class="Date"><img src="../Images/calendarr.png" alt="">2006-2009</div><br>
@@ -141,7 +146,7 @@
        
    </div>
    <!-- Skill Part-->
-   <h3 id="skill"> Skill</h3>
+   <h3 id="skill" class="texts"> Skill</h3>
 
    <div class="Skill">
         <div class="container">
@@ -175,7 +180,7 @@
     </div>    
    </div>
    <!--Project-->
-   <h2 id="Projects_intro">Some Of My Latest Projects</h2>
+   <h2 id="Projects_intro" class = "texts">Some Of My Latest Projects</h2>
 
    <div class="Projects">
     <section class="project">
