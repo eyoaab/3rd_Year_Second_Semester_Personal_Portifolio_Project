@@ -18,11 +18,15 @@ var Images = [
 
 ];
 var Leetcode = [
-  'Images/Leetcode/leetcode_profile.png',
-  'Images/Leetcode/Screenshot (95).png',
-  'Images/Leetcode/Screenshot (97).png',
-  'Images/Leetcode/Screenshot (103).png',
-  'Images/Leetcode/Screenshot (104).png'
+  'Images/Leetcode/image1.png',
+  'Images/Leetcode/image2.png',
+  'Images/Leetcode/image3.png',
+  'Images/Leetcode/image4.png',
+  'Images/Leetcode/image5.png',
+  'Images/Leetcode/image6.png',
+  'Images/Leetcode/image7.png',
+  'Images/Leetcode/image8.png',
+  'Images/Leetcode/image9.png'
 ]
 var Car_shiping = [
   'Images/Car shoping project/image1.png',
