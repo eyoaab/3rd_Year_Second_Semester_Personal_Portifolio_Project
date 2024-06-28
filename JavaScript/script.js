@@ -52,7 +52,7 @@ function changeImage(Images, photoId) {
   var currentIndex = getRandomInt(Images.length); 
   console.log('current index',currentIndex)
   console.log('length',Images.length)
-  imageElement.src ='../' + Images[currentIndex];
+  imageElement.src = Images[currentIndex];
 }
 // spiner
 document.addEventListener("DOMContentLoaded", function() {
